@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "My Pong Game Extension",
+    "version": "0.1",
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["jquery.js", "game.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icon.png"
+    }
+  }
